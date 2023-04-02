@@ -1,0 +1,87 @@
+body{
+    background: hwb(0 57% 41%);/*altera cor de fundo*/
+    text-align: center;/*alinha de modo centralizado*/
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*serve para zerar a distância, margem, e a propriedade padrão*/
+}
+header{
+    width: 100%;/*altera o tamanho*/
+    background-color: rgb(0, 0, 0);/*altera cor de fundo da frase*/
+    display: flex;/*serve para podermos manipular todos os elementos filhos desse flex container com propriedades novas*/
+    justify-content: space-around;/*serve para distribuir os itens igualmente no espaço disponível ao redor deles*/
+    align-items: center;/*alinha  centralmente os textos*/
+    padding: 20px 0;/*altera a distância da borda para o texto*/
+
+}
+.logo{
+    border-radius: 50%;/*altera a borda em formato redondo*/
+    width: 150px;
+    margin: 0%;
+}
+.logo:hover{
+    border-radius: 0%;
+    transition: all 0.5s;/*altera a transição, qndo se passa o mouse em cima do texto em 0.5s*/
+}
+.logo-text{
+    margin-left: 20px;/*serve para ajustar a margem do lado esquerdo*/
+    color: white;/*altera a cor da letra em branco*/
+    margin: 0%;
+
+
+}
+.menu li{
+    display: inline-block;/*serve para caracterizar se é uma linha em bloco ou "sem bloco"*/
+    margin: 0 0px;
+    border-radius: 30%;
+}
+.menu li a{
+    font-size: 24px;/*altera o tamanho da fonte*/
+    text-decoration: none;/*informa que não há nenhum texto em decoração*/
+    color: white;
+    text-transform: uppercase;/*serve para deixar as letras de determinado elemento maiúsculas*/
+    padding: 10PX 25px;
+    border-radius: 10px;
+}
+.menu li a:hover{
+    background-color: rgba(100, 100, 100, 0.8);
+}
+.borda{
+    margin: 100px 150px;
+    padding: 5em 15em 5em;
+    border: 6px solid black;
+    border-radius: 20px;
+    font-family: system-ui;/*define qual família de fonte iremos utilizar, e será o system-ui*/
+    background-color: rgb(94, 94, 94);
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border: solid black;/*altera a borda em sólida e na cor preta*/
+    color: white;
+}
+.tamanho{
+    width: 80%;
+}
+.left{     
+    float: left;/*deixa o texto no lado esquerdo*/   
+    width: 40;     
+    height: 60%; 
+}
+.right{     
+    float: right;/*deixa o texto no lado direito*/    
+    width: 27%;    
+    height: 40%; 
+}
+marquee{
+    color: black;
+    direction: ltr;/*altera a direção da esquerda para a direita*/
+}
